@@ -1,0 +1,23 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": false,
+    "jest": true
+  },
+  "extends": ["airbnb", "plugin:jest/recommended"],
+  "globals": {
+    "module": true
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
+  },
+  "plugins": [
+    "jest"
+  ],
+  "rules": {
+    "import/no-named-as-default": 0
+  }
+}
