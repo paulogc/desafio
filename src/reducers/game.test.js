@@ -12,6 +12,15 @@ const MOCKED_STATE = {
   },
 };
 
+const MOCKED_STATE_TWO = {
+  [PLAYER_ONE_ID]: {
+    life: 60,
+  },
+  [PLAYER_TWO_ID]: {
+    life: 100,
+  },
+};
+
 describe('game reducer', () => {
   let action;
 
@@ -41,9 +50,25 @@ describe('game reducer', () => {
     });
 
     describe('given no previous state', () => {
-      it('should update state removing point for player one', () => {
+      it('should update state removing point from player one', () => {
         expect(game(undefined, action)).toEqual(MOCKED_STATE);
       });
+    });
+    describe('given previous state', () => {
+      it('should update state removing point from player one', () => {
+        expect(game(MOCKED_STATE, action)).toEqual(MOCKED_STATE_TWO);
+      });
+    });
+  });
+
+  describe(`when action type is ${RESET}`, () => {
+    beforeEach(() => {
+      action = {
+        type: RESET,
+      };
+    });
+    it('should return initial state', () => {
+      expect(game(MOCKED_STATE, action)).toEqual(INITIAL_STATE);
     });
   });
 });

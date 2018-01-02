@@ -1,3 +1,4 @@
+import attack from '../utils/gameUtils';
 import { ATTACK, RESET } from '../actions/gameActions';
 import { PLAYER_ONE_ID, PLAYER_TWO_ID } from '../constants/playersId';
 
@@ -13,9 +14,10 @@ export const INITIAL_STATE = {
 export function game(state = INITIAL_STATE, action) {
   switch (action.type) {
     case ATTACK: {
-      return {
-        ...state,
-      };
+      return attack(state, action.payload);
+    }
+    case RESET: {
+      return INITIAL_STATE;
     }
     default:
       return state;
