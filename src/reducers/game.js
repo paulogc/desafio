@@ -11,7 +11,7 @@ export const INITIAL_STATE = {
   },
 };
 
-export function game(state = INITIAL_STATE, action) {
+export default function game(state = INITIAL_STATE, action) {
   switch (action.type) {
     case ATTACK: {
       return attack(state, action.payload);
