@@ -7,9 +7,7 @@ import MainPage from './components/pages/MainPage';
 
 const App = () => (
   <Provider store={store}>
-    <div>
-      <MainPage />
-    </div>
+    <MainPage />
   </Provider>
 );
 

@@ -3,11 +3,16 @@ import { ATTACK, RESET } from '../actions/gameActions';
 import { PLAYER_ONE_ID, PLAYER_TWO_ID } from '../constants/playersId';
 
 export const INITIAL_STATE = {
-  [PLAYER_ONE_ID]: {
-    life: 100,
-  },
-  [PLAYER_TWO_ID]: {
-    life: 100,
+  ids: [PLAYER_ONE_ID, PLAYER_TWO_ID],
+  content: {
+    [PLAYER_ONE_ID]: {
+      life: 100,
+      name: 'Naruto',
+    },
+    [PLAYER_TWO_ID]: {
+      life: 100,
+      name: 'Sasuke',
+    },
   },
 };
 
