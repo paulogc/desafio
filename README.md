@@ -28,7 +28,7 @@ Testes também fazem a diferença.
 
 #### Instruçoes:
 1 - Clone o repositório
-2 - No diretorio raiz execute yarn install (Node, npm and yarn are required)
-3 - Execute yarn start
+2 - No diretorio raiz execute - yarn install (Node, npm and yarn are required)
+3 - Execute - yarn start
 4 - Acesse: http://localhost:3000
-
+5 - Para executar os teste execute - yarn test
