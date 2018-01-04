@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import cx from 'classnames';
 
-import { Col, Grid, Row } from 'react-bootstrap';
+import { Button, Col, Grid, Row } from 'react-bootstrap';
 
 import { reset } from '../../actions/gameActions';
 
@@ -12,6 +12,8 @@ import Dialog from './Dialog';
 
 import { PLAYER_ONE_ID, PLAYER_TWO_ID } from '../../constants/playersId';
 
+import narutoImg from '../../images/naruto.png';
+import sasukeImg from '../../images/sasuke.png';
 import styles from './GameContainer.css';
 
 class GameContainer extends Component {
@@ -66,6 +68,7 @@ class GameContainer extends Component {
         <Row className={cx(styles.row, 'show-grid')}>
           <Col md={6} mdPush={6}>
             <GameSection
+              avatar={narutoImg}
               attakLabel="Rasengan"
               playerName={this.getName(PLAYER_ONE_ID)}
               enemy={PLAYER_TWO_ID}
@@ -74,6 +77,7 @@ class GameContainer extends Component {
           </Col>
           <Col md={6} mdPull={6}>
             <GameSection
+              avatar={sasukeImg}
               attakLabel="Shidori"
               playerName={this.getName(PLAYER_TWO_ID)}
               enemy={PLAYER_ONE_ID}
@@ -81,6 +85,15 @@ class GameContainer extends Component {
             />
           </Col>
         </Row>
+        <div className={styles.resetButton}>
+          <Button
+            block
+            bsSize="large"
+            onClick={this.handleResetGame}
+          >
+            Reset
+          </Button>
+        </div>
         <Dialog
           showDialog={showDialog}
           playerName={playerName}

@@ -3,9 +3,12 @@
 }
 
 .grid-background {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -100px;
+  background-color: black;
+  margin: auto;
+}
+
+.reset-button {
+  width: 200px;
+  padding: 30px;
+  margin: auto;
 }

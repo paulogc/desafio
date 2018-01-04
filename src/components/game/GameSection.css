@@ -1,0 +1,35 @@
+.player-section {
+  color: white;
+}
+
+.attak-button {
+  text-align: center;
+  width: 100%;
+}
+
+.player-name-label {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.player-life {
+  font-size: 38px;
+  padding: 10px;
+}
+
+.life-color-green {
+  color: yellowgreen;
+}
+
+.life-color-yellow {
+  color: yellow;
+}
+
+.life-color-red {
+  color: red;
+}
+
+.img-avatar {
+  width: 425px;
+  height: 650px;
+}
