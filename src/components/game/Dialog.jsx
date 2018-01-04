@@ -14,11 +14,11 @@ const Dialog = (props) => {
     <div className="static-modal">
       <Modal show={showDialog}>
         <Modal.Header>
-          <Modal.Title>The game ends</Modal.Title>
+          <Modal.Title>Game over</Modal.Title>
         </Modal.Header>
 
         <Modal.Body>
-          {`${playerName} lost the game`}
+          {`${playerName} lost`}
         </Modal.Body>
 
         <Modal.Footer>

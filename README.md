@@ -25,3 +25,10 @@ O design é muito importante, mas o UX é mais.
 Testes também fazem a diferença.
 
 #### Faça um fork deste repositório e boa sorte!
+
+#### Instruçoes:
+1 - Clone o repositório
+2 - No diretorio raiz execute yarn install (Node, npm and yarn are required)
+3 - Execute yarn start
+4 - Acesse: http://localhost:3000
+
