@@ -25,6 +25,10 @@
   color: yellow;
 }
 
+.dead-player {
+  filter: grayscale(100%);
+}
+
 .life-color-red {
   color: red;
 }

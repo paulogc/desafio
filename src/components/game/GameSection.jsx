@@ -30,23 +30,23 @@ export const GameSection = (props) => {
     playerSection,
     playerNameLabel,
     playerLife,
+    deadPlayer,
   } = styles;
 
   const handleAttack = () => onAttack({ playerId: enemy, lostPoints: LOST_POINTS });
 
   let colorClassName = lifeColorGreen;
+  let loser;
 
-  if (life <= 60) {
-    colorClassName = lifeColorYellow;
-  }
+  if (life <= 60) colorClassName = lifeColorYellow;
 
-  if (life < 40) {
-    colorClassName = lifeColorRed;
-  }
+  if (life < 40) colorClassName = lifeColorRed;
+
+  if (life === 0) loser = deadPlayer;
 
   return (
     <div className={playerSection}>
-      <img alt="" className={imgAvatar} src={avatar} />
+      <img alt="" className={cx(imgAvatar, loser)} src={avatar} />
       <div className={playerNameLabel} >{playerName}</div>
       <div className={attakButton}>
         <Button
