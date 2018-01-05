@@ -1,23 +1,33 @@
 import { ATTACK, RESET } from '../actions/gameActions';
 import { PLAYER_ONE_ID, PLAYER_TWO_ID } from '../constants/playersId';
 
-import { game, INITIAL_STATE } from './game';
+import game, { INITIAL_STATE } from './game';
 
 const MOCKED_STATE = {
-  [PLAYER_ONE_ID]: {
-    life: 80,
-  },
-  [PLAYER_TWO_ID]: {
-    life: 100,
+  ids: [PLAYER_ONE_ID, PLAYER_TWO_ID],
+  content: {
+    [PLAYER_ONE_ID]: {
+      name: 'Naruto',
+      life: 80,
+    },
+    [PLAYER_TWO_ID]: {
+      name: 'Sasuke',
+      life: 100,
+    },
   },
 };
 
 const MOCKED_STATE_TWO = {
-  [PLAYER_ONE_ID]: {
-    life: 60,
-  },
-  [PLAYER_TWO_ID]: {
-    life: 100,
+  ids: [PLAYER_ONE_ID, PLAYER_TWO_ID],
+  content: {
+    [PLAYER_ONE_ID]: {
+      name: 'Naruto',
+      life: 60,
+    },
+    [PLAYER_TWO_ID]: {
+      name: 'Sasuke',
+      life: 100,
+    },
   },
 };
 

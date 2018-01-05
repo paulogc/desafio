@@ -9,9 +9,10 @@ const PAYLOAD = {
 };
 
 const UPDATED_STATE = {
-  ...INITIAL_STATE,
-  [PLAYER_ONE_ID]: {
-    life: 80,
+  ids: INITIAL_STATE.ids,
+  content: {
+    ...INITIAL_STATE.content,
+    [PLAYER_ONE_ID]: { life: 80, name: 'Naruto' },
   },
 };
 

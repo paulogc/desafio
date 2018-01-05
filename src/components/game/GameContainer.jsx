@@ -69,7 +69,7 @@ class GameContainer extends Component {
           <Col md={6} mdPush={6}>
             <GameSection
               avatar={narutoImg}
-              attakLabel="Rasengan"
+              attakLabel="Hasengan"
               playerName={this.getName(PLAYER_ONE_ID)}
               enemy={PLAYER_TWO_ID}
               life={this.getLife(PLAYER_ONE_ID)}
