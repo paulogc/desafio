@@ -5,7 +5,7 @@ import cx from 'classnames';
 
 import { Button } from 'react-bootstrap';
 
-import { attack } from '../../actions/gameActions';
+import { attack } from 'actions/gameActions';
 
 import styles from './GameSection.css';
 

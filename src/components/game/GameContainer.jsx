@@ -5,15 +5,14 @@ import cx from 'classnames';
 
 import { Button, Col, Grid, Row } from 'react-bootstrap';
 
-import { reset } from '../../actions/gameActions';
+import { reset } from 'actions/gameActions';
+import narutoImg from 'images/naruto.png';
+import sasukeImg from 'images/sasuke.png';
+import { PLAYER_ONE_ID, PLAYER_TWO_ID } from 'constants/playersId';
 
 import GameSection from './GameSection';
 import Dialog from './Dialog';
 
-import { PLAYER_ONE_ID, PLAYER_TWO_ID } from '../../constants/playersId';
-
-import narutoImg from '../../images/naruto.png';
-import sasukeImg from '../../images/sasuke.png';
 import styles from './GameContainer.css';
 
 class GameContainer extends Component {

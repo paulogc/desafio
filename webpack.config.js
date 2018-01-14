@@ -2,6 +2,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const rootDir = path.resolve(__dirname, '..');
+
 const config = {
   entry: './src/index.js',
   output: {
@@ -10,7 +12,7 @@ const config = {
   },
   resolve: {
     modules: [
-      path.resolve(__dirname, 'src/'),
+      path.resolve(rootDir, 'src/'),
       'node_modules'
     ],
     extensions: ['.js', '.jsx']
